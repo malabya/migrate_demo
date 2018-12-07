@@ -1,0 +1,14 @@
+{
+  "name": "drupal/drupal_migrate_demo",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/drupal_migrate_demo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/drupal_migrate_demo",
+    "source": "http://cgit.drupalcode.org/drupal_migrate_demo"
+  },
+  "require": { }
+}

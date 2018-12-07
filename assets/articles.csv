@@ -1,0 +1,4 @@
+id,title,body,author,tags,link_title,link_url,created,updated
+1,Title 1,body 1,author1,"tag1, tag2","Production, Production (ECN link), Test","https://agencyhandler.ericsson.net/agencyhandler/, http://esessmw0109.ss.sw.ericsson.se/agencyhandler/, http://esessmw0137.ss.sw.ericsson.se/agencyhandler/",27 November 2018,27 November 2018
+2,Title 2,body2,author1,"tag2, tag3","Global Chronos Production, Global Chronos Training Environment","https://chronos.internal.ericsson.com/niku/app?action=npt.overview, http://clarity-training.internal.ericsson.com/niku/nu#action:security.logoutAction",25 November 2018,27 November 2018
+3,Title3,body 3,author2,"tag3, tag4",BAMS Production,http://bams.internal.ericsson.com/BAMSWeb/main.do,22 November 2018,25 November 2018

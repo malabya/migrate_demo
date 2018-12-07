@@ -1,0 +1,50 @@
+dependencies:
+  module:
+    - migrate_source_csv
+id: drupal_migrate_article_demo
+migration_tags:
+  - CSV
+migration_group: drupal_migrate_demo
+label: Article
+source:
+  plugin: csv
+  path: modules/custom/drupal_migrate_demo/assets/articles.csv
+  header_row_count: 1
+  keys:
+    - id
+process:
+  type:
+    plugin: default_value
+    default_value: article
+  title: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: "full_html"
+  field_tags:
+    -
+      plugin: explode
+      delimiter: ','
+      source: tags
+    -
+      plugin: entity_generate
+      bundle_key: vid
+      bundle: tags
+      entity_type: taxonomy_term
+  uid:
+    plugin: user_generate
+    source: author
+  field_reference:
+    plugin: link_generate
+    source:
+      - link_title
+      - link_url
+  created:
+    plugin: date_process
+    source: created
+  changed:
+    plugin: date_process
+    source: updated
+destination:
+  plugin: 'entity:node'
+migration_dependencies: { }
